@@ -44,3 +44,19 @@ iwconfig- used for displaying current network configuration information, replace
 nmcli- controlling network manager from terminal
 brctl- used to create and manipulate ethernet bridge.
 nmtui - same as nmcli but with a GUI.
+Configuration Files:
+/etc/sysconfig/network-scripts/ - configuration file for network interface
+/etc/sysconfig/network - specifies additional information that is valid to all network interfaces on the system
+etc/host/ - file contains a mapping of IP addresses to URLs
+/etc/network - contains  network  interface  configuration  information  for the ifup and ifdown commands.  This is where you configure how your system is  connected to the network.
+/etc/nsswitch.conf -  used to configure which services are to be used to determine information such as hostnames, password files, and group files
+/etc/resolv.conf - file for connecting local clients to the internal DNS stub resolver of systemd-resolved. This file lists all configured search domains
+/etc/netplan -  manage and configure network settings easily in Ubuntu systems. It also allows you to configure a network interface.
+/etc/sysctl.conf - used to override default kernel parameter values, only a small number of is predefined in this file
+/etc/dhcp/dhclient.conf  - contains configuration information for dhclient
+Bonding -  method to combine or aggregate network interfaces to provide a logical interface with higher throughput or redundancy
+    Aggregation- binding more physical network interfaces in order to provide more bandwidth than a single interface can provide or provide link redundancy (in case of cable failure)
+    Active/Passive - 
+    Load Balancing - 
+
+1.4 Given a scenario, manage storage in a Linux environment.
